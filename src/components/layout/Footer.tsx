@@ -2,8 +2,10 @@ import React from 'react'
 import { ArrowUp, Heart } from 'lucide-react'
 import { motion } from 'framer-motion'
 
+const CURRENT_YEAR = new Date().getFullYear()
+
 export const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = CURRENT_YEAR
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })

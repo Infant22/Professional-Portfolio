@@ -62,7 +62,7 @@ export const ClydeHero: React.FC = () => {
 
             {/* Subheading: Deeper, richer color and aligned to the visual stem of the 'C' */}
             <span
-              className="text-[13px] sm:text-[14px] font-bold tracking-[0.2em] text-[#787c53] uppercase block mb-3.5 pl-[2px] text-left"
+              className="text-[12px] xs:text-[13px] sm:text-[14px] font-bold tracking-[0.2em] text-[#787c53] uppercase block mb-3.5 pl-[2px] text-left"
               style={{ fontFamily: "'Poppins', sans-serif" }}
             >
               HELLO! THIS IS <span className="text-[#0ea5e9] font-extrabold">INFANT ROJAR</span>
@@ -70,7 +70,7 @@ export const ClydeHero: React.FC = () => {
 
             {/* Headline: Clyde Poppins Typography, 2 clean lines on all screen sizes */}
             <h1
-              className="text-[34px] sm:text-[42px] lg:text-[46px] xl:text-[48px] font-extrabold text-black tracking-tight leading-[1.2] sm:leading-[1.18] mb-6 sm:mb-8 text-left"
+              className="text-[30px] xs:text-[34px] min-[500px]:text-[38px] sm:text-[42px] lg:text-[46px] xl:text-[48px] font-extrabold text-black tracking-tight leading-[1.2] sm:leading-[1.18] mb-6 sm:mb-8 text-left"
               style={{ fontFamily: "'Poppins', sans-serif" }}
             >
               Creative <span className="text-[#a1a480]">Software</span>
@@ -83,7 +83,7 @@ export const ClydeHero: React.FC = () => {
               <div className="relative inline-block">
                 <a
                   href="#contact"
-                  className="bg-[#a1a480] hover:bg-[#8f926e] text-white text-[12px] sm:text-[12.5px] font-bold tracking-[0.16em] uppercase px-6 sm:px-7 py-3.5 sm:py-3.5 rounded transition-colors shadow-xs inline-block relative z-10"
+                  className="bg-[#a1a480] hover:bg-[#8f926e] text-white text-[11.5px] xs:text-[12px] sm:text-[12.5px] font-bold tracking-[0.16em] uppercase px-5 xs:px-6 sm:px-7 py-3 xs:py-3.5 rounded transition-colors shadow-xs inline-block relative z-10"
                   style={{ fontFamily: "'Poppins', sans-serif" }}
                 >
                   Hire me
@@ -96,7 +96,7 @@ export const ClydeHero: React.FC = () => {
               <a
                 href="#resume"
                 download
-                className="border border-[#a1a480] text-gray-800 hover:bg-[#a1a480] hover:text-white text-[12px] sm:text-[12.5px] font-bold tracking-[0.16em] uppercase px-6 sm:px-7 py-3.5 sm:py-3.5 rounded transition-colors bg-white/80"
+                className="border border-[#a1a480] text-gray-800 hover:bg-[#a1a480] hover:text-white text-[11.5px] xs:text-[12px] sm:text-[12.5px] font-bold tracking-[0.16em] uppercase px-5 xs:px-6 sm:px-7 py-3 xs:py-3.5 rounded transition-colors bg-white/80"
                 style={{ fontFamily: "'Poppins', sans-serif" }}
               >
                 Download CV
