@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Rounded Squircle Base (Works sharply on both Dark & Light Browser Themes) -->
+  <rect width="64" height="64" rx="16" fill="#0f172a" />
+  
+  <!-- Subtle Inner Border Accent -->
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="#334155" stroke-width="1.5" />
+  
+  <!-- Modern Geometric "I" -->
+  <rect x="15" y="16" width="7" height="32" rx="3.5" fill="#a1a480" />
+  
+  <!-- Modern Geometric "R" -->
+  <!-- Stem -->
+  <rect x="28" y="16" width="7" height="32" rx="3.5" fill="#ffffff" />
+  
+  <!-- Loop -->
+  <path d="M31 16 H41 C46.5 16 50 19.5 50 25 C50 30.5 46.5 34 41 34 H31 V16 Z" fill="#ffffff" />
+  <path d="M35 22 H40.5 C42.8 22 44.5 23.2 44.5 25 C44.5 26.8 42.8 28 40.5 28 H35 V22 Z" fill="#0f172a" />
+  
+  <!-- Leg -->
+  <path d="M39 32 L49 48" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" />
+  
+  <!-- Olive-green Terminal Spark Dot (Top Right) -->
+  <circle cx="51" cy="14" r="3" fill="#a1a480" />
+</svg>
