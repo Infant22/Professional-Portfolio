@@ -421,9 +421,9 @@ export const Character3D: React.FC = () => {
       camera.aspect = w / h
 
       // Desktop uses the exact original approved camera (5.4)
-      // Only small mobile phones (window.innerWidth < 650) adapt camera distance
-      if (typeof window !== 'undefined' && window.innerWidth < 650) {
-        camera.position.set(0, 0.42, 5.5)
+      // Only below 640px (mobile screens) bring camera slightly closer to increase robot size
+      if (typeof window !== 'undefined' && window.innerWidth < 640) {
+        camera.position.set(0, 0.38, 4.7)
         camera.fov = 36
       } else {
         camera.position.set(0, 0.45, 5.4)
@@ -521,7 +521,7 @@ export const Character3D: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-[240px] xs:h-[260px] sm:h-[300px] md:h-[480px] lg:h-[580px] flex items-center justify-center select-none pointer-events-none mt-0"
+      className="relative w-full h-[270px] xs:h-[290px] sm:h-[310px] md:h-[480px] lg:h-[580px] flex items-center justify-center select-none pointer-events-none mt-0"
     >
       {/* 3D Robot Canvas - touchAction pan-y preserves seamless mobile scrolling */}
       <canvas
