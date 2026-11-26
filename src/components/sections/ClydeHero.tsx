@@ -94,8 +94,10 @@ export const ClydeHero: React.FC = () => {
               </div>
 
               <a
-                href="#resume"
-                download
+                href="/My%20resume/Infant_Rojar_Software_Engineer_Resume%20(2).pdf"
+                download="Infant_Rojar_Software_Engineer_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border border-[#a1a480] text-gray-800 hover:bg-[#a1a480] hover:text-white text-[11.5px] xs:text-[12px] sm:text-[12.5px] font-bold tracking-[0.16em] uppercase px-5 xs:px-6 sm:px-7 py-3 xs:py-3.5 rounded transition-colors bg-white/80"
                 style={{ fontFamily: "'Poppins', sans-serif" }}
               >

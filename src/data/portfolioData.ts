@@ -48,7 +48,7 @@ export const portfolioData: PortfolioData = {
     location: "India",
     github: "https://github.com/Infant22",
     linkedin: "https://linkedin.com/in/infant-rojar",
-    resumeUrl: "#resume",
+    resumeUrl: "/My%20resume/Infant_Rojar_Software_Engineer_Resume%20(2).pdf",
     email: "infantrojar@gmail.com"
   },
   featuredProjects: [
