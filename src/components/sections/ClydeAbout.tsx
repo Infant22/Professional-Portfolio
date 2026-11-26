@@ -123,7 +123,7 @@ export const ClydeAbout: React.FC = () => {
               <div className="relative w-full h-[330px] xs:h-[380px] sm:h-[460px] flex items-end justify-center pt-4 sm:pt-6 px-3 sm:px-4">
                 <img
                   src="/profile-clean.png"
-                  alt="Infant Rojar"
+                  alt="Infant Rojar - Software Developer &amp; Engineer"
                   className="w-full h-auto object-contain max-h-[330px] xs:max-h-[380px] sm:max-h-[460px] select-none transition-transform duration-500 group-hover:scale-[1.02] drop-shadow-md"
                   style={{
                     WebkitMaskImage: 'linear-gradient(to bottom, black 95%, transparent 100%)',
