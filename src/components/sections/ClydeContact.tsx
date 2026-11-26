@@ -126,23 +126,37 @@ export const ClydeContact: React.FC = () => {
         })
         if (!response.ok) throw new Error('Failed to submit message to Formspree')
       } else {
-        // Primary: Native Netlify Forms transmission (standard URL-encoded POST)
-        const encodedBody = new URLSearchParams({
-          'form-name': 'contact',
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message
-        }).toString()
+        // In local Vite dev mode, Netlify form handler is not running locally
+        if (import.meta.env.DEV) {
+          await new Promise(resolve => setTimeout(resolve, 800))
+        } else {
+          // Primary: Native Netlify Forms transmission (URL-encoded POST)
+          const formElement = e.currentTarget as HTMLFormElement
+          const payload = new FormData(formElement)
 
-        const response = await fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: encodedBody
-        })
+          // Ensure form-name and honeypot field are included in the payload
+          if (!payload.get('form-name')) {
+            payload.set('form-name', 'contact')
+          }
+          if (!payload.has('bot-field')) {
+            payload.set('bot-field', '')
+          }
+          payload.set('name', formData.name)
+          payload.set('email', formData.email)
+          payload.set('subject', formData.subject)
+          payload.set('message', formData.message)
 
-        if (!response.ok) {
-          throw new Error('Netlify form submission failed')
+          const encodedBody = new URLSearchParams(payload as any).toString()
+
+          const response = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encodedBody
+          })
+
+          if (!response.ok) {
+            throw new Error(`Netlify form submission failed with HTTP ${response.status}`)
+          }
         }
       }
 

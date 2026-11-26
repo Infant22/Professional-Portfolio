@@ -12,7 +12,9 @@
   </head>
   <body>
     <!-- Netlify Form Detection (Enables Netlify to capture form submissions for React / Vite SPAs) -->
-    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <form name="contact" netlify data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="bot-field" />
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="text" name="subject" />

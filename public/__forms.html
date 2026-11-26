@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netlify Forms Schema Fallback</title>
+</head>
+<body>
+  <!-- This hidden static form ensures Netlify's build bot registers the contact form schema during deployment -->
+  <form name="contact" netlify data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="text" name="bot-field" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="subject" />
+    <textarea name="message"></textarea>
+  </form>
+</body>
+</html>
